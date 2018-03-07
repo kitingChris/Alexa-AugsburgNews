@@ -1,0 +1,17 @@
+{
+    "NEWS_CARD_TITLE": "News von Augsburg.de",
+    "NEWS_INTRO_MESSAGE": "Hier sind die %count% aktuellsten Neuigkeiten aus Augsburg: ",
+    "NEWS_ITEM_SPEECH": "<break strength='x-strong' />%num% <break strength='weak' /> %date% <break strength='medium' /> %title% ",
+    "NEWS_ITEM_MESSAGE": "%date%: %title%",
+    "NO_NEWS_MESSAGE": "Aktuell gibt es nichts neues in Augsburg",
+    "ASK_FOR_DETAILS": "<break strength='x-strong' />Zu welcher News, soll ich dir Details vorlesen?",
+    "SESSION_END_MESSAGE": "Auf Wiedersehen!",
+    "HELP_MESSAGE": "Du kannst folgendes sagen: 'Alexa, Hallo Welt' oder 'Alexa, sag Hallo Welt mein Name ist Super Sebastian'",
+    "UNHANDLED_MESSAGE": "Entschuldigung, das habe ich nicht verstanden.",
+    "ERROR_MESSAGE": "Entschuldigung, leider trat ein Fehler auf.",
+    "NO_NEWS_DETAIL_MESSAGE": "Dafür finde ich leider keine Details",
+    "ORDINAL_1": "Erstens",
+    "ORDINAL_2": "Zweitens",
+    "ORDINAL_3": "Drittens",
+    "ORDINAL_4": "Viertens"
+}

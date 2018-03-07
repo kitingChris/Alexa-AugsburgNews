@@ -1,0 +1,144 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "augsburg news",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "slots": [],
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "slots": [],
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "slots": [],
+                    "samples": []
+                },
+                {
+                    "name": "GetNewsListIntent",
+                    "slots": [],
+                    "samples": [
+                        "nach Neuigkeiten",
+                        "nach News aus Augsburg",
+                        "was gibt es Neues in Augsburg",
+                        "was ist aktuell los in Augsburg"
+                    ]
+                },
+                {
+                    "name": "GetNewsDetailsIntent",
+                    "slots": [
+                        {
+                            "name": "newsNumber",
+                            "type": "OrdinalNumber",
+                            "samples": [
+                                "erste",
+                                "zweite",
+                                "dritte",
+                                "vierte"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "{newsNumber}",
+                        "{newsNumber} news",
+                        "Details zur {newsNumber} News"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "OrdinalNumber",
+                    "values": [
+                        {
+                            "id": "1",
+                            "name": {
+                                "value": "1",
+                                "synonyms": [
+                                    "erste",
+                                    "erster",
+                                    "ersten",
+                                    "erstes",
+                                    "erstens"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "2",
+                            "name": {
+                                "value": "2",
+                                "synonyms": [
+                                    "zweite",
+                                    "zweiter",
+                                    "zweiten",
+                                    "zweites",
+                                    "zweitens"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "3",
+                            "name": {
+                                "value": "3",
+                                "synonyms": [
+                                    "dritte",
+                                    "dritter",
+                                    "dritten",
+                                    "drittes",
+                                    "drittens"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "4",
+                            "name": {
+                                "value": "4",
+                                "synonyms": [
+                                    "vierte",
+                                    "vierter",
+                                    "vierten",
+                                    "viertes",
+                                    "viertens"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "GetNewsDetailsIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "newsNumber",
+                            "type": "OrdinalNumber",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.913702677670.257035542147"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.913702677670.257035542147",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Welche News soll ich vorlesen?"
+                    }
+                ]
+            }
+        ]
+    }
+}
